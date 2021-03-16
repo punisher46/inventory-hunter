@@ -20,7 +20,7 @@ jobs:
         remote_docker_host: ${{ secrets.HOST }}
         ssh_private_key: ${{ secrets.PRIVATE_KEY }}
         ssh_public_key: ${{ secrets.PUBLIC_KEY }}
-        deployment_mode: docker-compose
+        deployment_mode: docker-swarm
         copy_stack_file: true
         deploy_path: /root/deployment-test
         stack_file_name: docker-compose.yml
